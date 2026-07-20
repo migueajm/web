@@ -1,12 +1,48 @@
 export const projects = [
     {
+        slug: 'infolead-api',
+        title: 'INFOLEAD API',
+        description: {
+            en: 'REST API designed to integrate with INFOEXPO events. It provides secure JWT authentication, real-time attendee and exhibitor badge lookup, paginated search history, token rotation, request auditing, and high-performance RESTful endpoints. Built for seamless integration with mobile applications, web platforms, CRM systems, and enterprise solutions.',
+            es: 'API REST diseñada para integrarse con los eventos de INFOEXPO. Proporciona autenticación segura mediante JWT, consulta en tiempo real de badges de asistentes y expositores, historial de búsquedas con paginación, rotación de tokens, auditoría de solicitudes y endpoints RESTful de alto rendimiento. Preparada para integraciones con aplicaciones móviles, plataformas web, sistemas CRM y soluciones empresariales.'
+        },
+        cover: './assets/images/projects/infolead-api/cover.webp',
+        images: [
+            './assets/images/projects/infolead-api/1.webp',
+            './assets/images/projects/infolead-api/2.webp'
+        ],
+        technologies: [
+            {
+                name: 'Symfony',
+                icon: './assets/images/code/symfony.webp'
+            },
+            {
+                name: 'PHP',
+                icon: './assets/images/code/php.webp'
+            },
+            {
+                name: 'JWT',
+                icon: './assets/images/code/jwt.webp'
+            },
+            {
+                name: 'Git',
+                icon: './assets/images/code/git.webp'
+            }
+        ],
+        demo: 'https://lt.infoexpo.com.mx/infolead/public/doc',
+        source: '',
+        year: '2026',
+        role: 'Backend Developer',
+        status: 'Production'
+    },
+    {
         slug: 'expense-manager',
         title: 'Expense Manager',
         description: {
             en: 'Personal expense management application focused on financial tracking, expense categorization, analytics and budget control across web and mobile platforms.',
             es: 'Aplicación de gestión de gastos personales enfocada en el seguimiento financiero, categorización de gastos, analíticas y control de presupuestos en plataformas web y móviles.'
         },
-        cover:'./assets/images/projects/expense-manager/cover.webp',
+        cover: './assets/images/projects/expense-manager/cover.webp',
         images: [
             './assets/images/projects/expense-manager/1.webp',
             './assets/images/projects/expense-manager/2.webp'
