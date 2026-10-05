@@ -170,7 +170,7 @@ export const ProjectDetail = (slug) => {
                                 <img
                                     src="${project.cover}"
                                     alt="${project.title}"
-                                    class="project-cover"
+                                    class="project-cover ${['infolead', 'infoaccess'].includes(project.slug) ? 'project-cover-light' : ''}"
                                 />
                             `
                             : ''

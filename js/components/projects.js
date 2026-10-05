@@ -12,7 +12,7 @@ const renderProjects = () =>
                     <img
                         src="${project.cover}"
                         alt="${project.title}"
-                        class="project-image"
+                        class="project-image ${['infolead', 'infoaccess'].includes(project.slug) ? 'project-image-light' : ''}"
                     />
                 `
                 : `

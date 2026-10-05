@@ -19,9 +19,14 @@ export const Navbar = (module) => {
             <div class="navbar-content">
                 <a
                     href="#home"
-                    class="gradient-text"
+                    class="navbar-brand gradient-text"
                 >
                     @migueajm/
+                    <img
+                        class="navbar-avatar"
+                        src="./assets/images/profile.webp"
+                        alt=""
+                    />
                 </a>
                 <nav class="navbar-links">
                     <a

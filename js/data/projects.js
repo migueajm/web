@@ -1,5 +1,37 @@
 export const projects = [
     {
+        slug: 'expo-amic-dental',
+        title: 'EXPO AMIC DENTAL',
+        description: {
+            en: 'Mobile application for Expo AMIC Dental. Starting from version 3, I took over the project and completely rebuilt the application, introducing a new interface, navigation structure, registration flow, event content, and several features designed to improve the attendee experience. The app provides access to event information, exhibitors, conferences, digital badges, tickets, maps, multimedia content, surveys, and other event services.',
+            es: 'Aplicación móvil para Expo AMIC Dental. A partir de la versión 3, tomé el proyecto y rehice completamente la aplicación, incorporando una nueva interfaz, estructura de navegación, flujo de registro, contenido del evento y diversas funcionalidades enfocadas en mejorar la experiencia de los asistentes. La aplicación permite consultar información del evento, expositores, conferencias, gafete digital, boletos, mapas, contenido multimedia, encuestas y otros servicios del evento.'
+        },
+        cover: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/17/9a/15/179a15ef-c325-e06b-8866-1edf7a9cf112/Placeholder.mill/400x400bb-75.webp',
+        images: [
+            'https://play-lh.googleusercontent.com/GxZ4CjfXpZegHTw9slTRWUIrjUwvkcA3Vrb2o9dHQvmgS-CkpiLt6Vx5ly-RsMlH6fYgB1yg3EkWRPYJNx3rkGw=w5120-h2880-rw',
+            'https://play-lh.googleusercontent.com/jdTWcJeDs2oW7Hi9GIh2HGHVc2UUff--c4YuTgSTf4GSVIHcBB1fVCuXweL-smd7HwfExhoV_wPx3sNzErocqQ=w5120-h2880-rw',
+        ],
+        technologies: [
+            {
+                name: 'Android',
+                icon: './assets/images/code/android.webp'
+            },
+            {
+                name: 'IOS',
+                icon: './assets/images/code/ios.webp'
+            },
+            {
+                name: 'Git',
+                icon: './assets/images/code/git.webp'
+            }
+        ],
+        demo: 'https://apps.apple.com/mx/app/expo-amic-dental/id1619999495',
+        source: '',
+        year: '2026',
+        role: 'Mobile Developer',
+        status: 'Production'
+    },
+    {
         slug: 'infolead-api',
         title: 'INFOLEAD API',
         description: {

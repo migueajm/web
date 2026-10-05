@@ -1,10 +1,26 @@
 import { skills } from '../data/skills.js';
 import { t } from '../language.js';
 
+const iconForSkill = {
+    JavaScript: 'js', TypeScript: 'ts', Vue: 'vue', React: 'react',
+    Angular: 'angular', HTML5: 'html', CSS3: 'css', PHP: 'php',
+    Symfony: 'symfony', Laravel: 'laravel', 'Node.js': 'nodejs',
+    'Express.js': 'nodejs', 'REST APIs': 'jwt', Flutter: 'flutter',
+    Dart: 'dart', Android: 'android', iOS: 'ios', Windows: 'terminal',
+    PostgreSQL: 'postgresql', MySQL: 'mysql', SQLite: 'sql'
+};
+
 const renderSkills = (items) =>
     items.map((skill) => `
         <div class="skill-chip">
-            ${skill}
+            <img
+                class="skill-icon"
+                src="./assets/images/code/${iconForSkill[skill]}.webp"
+                alt=""
+                loading="lazy"
+                aria-hidden="true"
+            />
+            <span>${skill}</span>
         </div>
     `).join('');
 

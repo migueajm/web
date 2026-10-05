@@ -26,6 +26,23 @@
     justify-content: space-between;
 }
 
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    flex-shrink: 0;
+}
+
+.navbar-avatar {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    object-position: 72% center;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+}
+
 .navbar-links {
     display: flex;
     gap: 2rem;
@@ -52,6 +69,13 @@
 .hero-content {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -120,13 +144,22 @@
 }
 
 .skill-chip {
-    padding: .85rem 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    padding: .65rem 1rem;
     border-radius: 999px;
     color: var(--text-secondary);
     border: 1px solid var(--border-color);
     transition:
         background var(--transition-fast),
         color var(--transition-fast);
+}
+
+.skill-icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    object-fit: contain;
 }
 
 .skill-chip:hover {
@@ -154,6 +187,11 @@
     margin-bottom: 1.5rem;
     border: 1px solid var(--border-color);
     padding: 1rem;
+}
+
+.project-image-light,
+.project-cover-light {
+    background: #fff;
 }
 
 .timeline {
