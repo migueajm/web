@@ -19,6 +19,18 @@ document.addEventListener(
             'hashchange',
             renderApp
         );
+        window.addEventListener(
+            'portfolio-language-change',
+            () => {
+                const scrollPosition = window.scrollY;
+                renderApp();
+                window.scrollTo(0, scrollPosition);
+                requestAnimationFrame(() => {
+                    initAnimations();
+                    updateActiveSection();
+                });
+            }
+        );
         updateActiveSection();
         window.addEventListener(
             'scroll',

@@ -37,6 +37,12 @@ export const Experience = () => `
         <div class="timeline">
             ${renderExperience()}
         </div>
+
+        <div class="experience-actions">
+            <a href="#/cv" class="button button-secondary">
+                ${t('cv.open')}
+            </a>
+        </div>
     </div>
 </section>
 `;

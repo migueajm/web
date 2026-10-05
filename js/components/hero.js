@@ -34,6 +34,10 @@ export const Hero = () => `
                     >
                         ${t('hero.secondaryButton')}
                     </a>
+
+                    <a href="#/cv" class="button button-secondary">
+                        ${t('cv.open')}
+                    </a>
                 </div>
             </div>
         </div>

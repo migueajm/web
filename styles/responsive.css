@@ -39,6 +39,28 @@
     }
 
     .navbar {
-        padding: .8rem 1rem;
+        width: calc(100% - 1rem);
+        padding: .65rem .75rem;
+    }
+
+    .navbar-brand {
+        gap: .4rem;
+    }
+
+    .navbar-avatar {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .navbar-controls {
+        gap: .4rem;
+    }
+
+    .theme-button,
+    .mobile-menu-button,
+    .language-button {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
     }
 }

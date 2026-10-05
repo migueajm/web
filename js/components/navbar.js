@@ -1,6 +1,6 @@
 import { toggleTheme } from '../theme.js';
 
-import { t } from '../language.js';
+import { currentLanguage, toggleLanguage, t } from '../language.js';
 
 import {
     initNavbarEvents
@@ -10,8 +10,9 @@ export const Navbar = (module) => {
     setTimeout(() => {
         const themeButton = document.getElementById('theme-toggle');
         themeButton?.addEventListener('click', toggleTheme);
+        const languageButton = document.getElementById('language-toggle');
+        languageButton?.addEventListener('click', toggleLanguage);
         initNavbarEvents();
-        document.querySelector('[href="#' + module + '"]')?.click();
     });
 
     return `
@@ -21,12 +22,12 @@ export const Navbar = (module) => {
                     href="#home"
                     class="navbar-brand gradient-text"
                 >
-                    @migueajm/
                     <img
                         class="navbar-avatar"
                         src="./assets/images/profile.webp"
                         alt=""
                     />
+                    @migueajm/
                 </a>
                 <nav class="navbar-links">
                     <a
@@ -65,13 +66,16 @@ export const Navbar = (module) => {
                     </a>
                 </nav>
 
-                <div
-                    style="
-                        display:flex;
-                        gap:1rem;
-                        align-items:center;
-                    "
-                >
+                <div class="navbar-controls">
+                    <button
+                        id="language-toggle"
+                        class="button button-secondary language-button"
+                        type="button"
+                        aria-label="${currentLanguage === 'es' ? t('language.switchToEnglish') : t('language.switchToSpanish')}"
+                        title="${currentLanguage === 'es' ? t('language.switchToEnglish') : t('language.switchToSpanish')}"
+                    >
+                        ${currentLanguage.toUpperCase()}
+                    </button>
                     <button
                         id="theme-toggle"
                         class="

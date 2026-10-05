@@ -11,14 +11,10 @@ export const experience = [
     {
         company: 'Infoexpo',
         role: 'Mobile & Full Stack Developer',
-        period: '01/2023 - 12/2025',
+        period: '01/2023 - 01/2025',
         description: {
-            en: 'Developed and maintained mobile and web applications focused on business operations and event management. Implemented full stack solutions, system integrations, and administrative platforms using modern development technologies.',
-            es: 'Desarrollé y mantuve aplicaciones móviles y web enfocadas en operaciones empresariales y gestión de eventos. Implementé soluciones Full Stack, integraciones de sistemas y plataformas administrativas utilizando tecnologías modernas de desarrollo.'
-        },
-        description: {
-            en: 'Participated in the development and implementation of enterprise modules and internal management systems. Contributed to platform modernization, performance improvements, and onboarding support for new development team members.',
-            es: 'Participé en el desarrollo e implementación de módulos empresariales y sistemas internos de gestión. Contribuí a la modernización de plataformas, mejoras de rendimiento y apoyo en la integración de nuevos integrantes del equipo de desarrollo.'
+            en: 'Developed mobile and web applications for business operations and event management, including full stack features, system integrations, and administrative platforms. Contributed to enterprise modules, internal management systems, platform modernization, performance improvements, and onboarding support for new team members.',
+            es: 'Desarrollé aplicaciones móviles y web para operaciones empresariales y gestión de eventos, incluyendo funcionalidades Full Stack, integraciones y plataformas administrativas. Contribuí a módulos empresariales, sistemas internos, modernización de plataformas, mejoras de rendimiento y apoyo a nuevos integrantes del equipo.'
         }
     },
     {

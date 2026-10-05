@@ -1,4 +1,9 @@
+const years = ((new Date()).getFullYear() - 2021);
 export default {
+    language: {
+        switchToEnglish: 'Cambiar a inglés',
+        switchToSpanish: 'Cambiar a español'
+    },
     navigation: {
         about: 'Sobre mí',
         skills: 'Habilidades',
@@ -19,7 +24,7 @@ export default {
         description:
             'Soy un Full Stack Developer especializado en aplicaciones web y móviles modernas, enfocado en crear soluciones escalables, mantenibles y de alto rendimiento.',
         cards: {
-            years: '3+ Años',
+            years: `${years}+ Años`,
             experience: 'Experiencia Profesional',
             frontend: 'Desarrollo UI Moderno',
             backend: 'APIs y Sistemas Escalables',
@@ -39,6 +44,28 @@ export default {
     },
     experience: {
         title: 'Experiencia'
+    },
+    cv: {
+        title: 'Currículum',
+        open: 'Ver CV',
+        intro: 'Una versión resumida de mi trayectoria, experiencia y enfoque técnico.',
+        download: 'Imprimir / Guardar como PDF',
+        back: 'Volver al portafolio',
+        headline: 'Desarrollador de Software Full Stack | Backend y aplicaciones móviles',
+        portfolio: 'Portafolio web',
+        profile: 'Perfil profesional',
+        summary: `Desarrollador de Software Full Stack con más de ${years} años de experiencia en soluciones empresariales web y móviles. Especializado en backend con PHP, Symfony y PostgreSQL, con experiencia complementaria en Flutter y Dart. He participado en arquitectura, APIs REST, modelado de datos, integraciones, seguridad, despliegues y soporte a sistemas en producción.`,
+        expertise: 'Enfoque',
+        expertiseText: 'Plataformas para eventos y exposiciones: gestión de asistentes y expositores, networking, captura de leads mediante QR, contactos, reuniones, notificaciones y administración. Experiencia en modernización y mantenimiento de sistemas legacy, además de integración de servicios externos y APIs de IA generativa.',
+        technicalSkills: 'Competencias técnicas',
+        backend: 'Backend',
+        mobile: 'Móvil',
+        data: 'Datos',
+        architecture: 'Arquitectura',
+        tools: 'Herramientas',
+        other: 'Integraciones',
+        experience: 'Experiencia profesional',
+        selectedProjects: 'Proyectos seleccionados'
     },
     contact: {
         title: 'Contacto',

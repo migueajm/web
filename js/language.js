@@ -38,6 +38,23 @@ export const initLanguage = () => {
 
     translations =
         locales[currentLanguage];
+    document.documentElement.lang = currentLanguage;
+};
+
+export const setLanguage = (language) => {
+    if (!Object.prototype.hasOwnProperty.call(locales, language) || language === currentLanguage) {
+        return;
+    }
+
+    currentLanguage = language;
+    translations = locales[language];
+    document.documentElement.lang = language;
+    (new SecureStorageManager()).set(STORAGE_KEY, language);
+    window.dispatchEvent(new Event('portfolio-language-change'));
+};
+
+export const toggleLanguage = () => {
+    setLanguage(currentLanguage === 'es' ? 'en' : 'es');
 };
 
 export const t = (path) => {
